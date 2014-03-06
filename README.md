@@ -30,8 +30,8 @@ Apiservise
     -экшен разрешен к конфиге настроек модуля.
 4. Сериализация входящих параметров.
 
-## 3. Параметры запроса:
-Пример:
+## 3. Параметры запроса.
+
     input: /users/id/1234?method=get&a=12&type=json&puk=PUBLIC_KEY&sign
 
 module: user
@@ -42,7 +42,8 @@ type  : json||php||xml
 puk - публичный ключ
 sign - сигнатура.
 
-Формирование сигнатуры:
+Формирование сигнатуры.
+
     md5(/users/id/1234?method=get&a=12&type=json&puk=PUBLIC_KEY.PRIVATE_KEY)
 
 ## 4. Параметры ответа:
